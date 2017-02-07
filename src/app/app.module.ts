@@ -4,15 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DocumentViewerComponent } from './component/document-viewer/document-viewer.component';
+import { ExamplePdfComponent } from './component/example-pdf/example-pdf.component';
+import { PdfViewerComponent } from 'ng2-pdf-viewer';
+import { AppRoutingModule }     from './app-routing.module';
+import { HomeComponent } from './component/home/home.component';
+import { DocumentComponent } from './component/document/document.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DocumentViewerComponent,
+    ExamplePdfComponent,
+    PdfViewerComponent,
+    HomeComponent,
+    DocumentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

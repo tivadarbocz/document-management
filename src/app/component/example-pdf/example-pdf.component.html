@@ -1,0 +1,16 @@
+<div>
+  <div class="row">
+    <div class="col-6">
+      <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
+    </div>
+    <div class="col-6">
+      <label>Page:</label>
+      <input type="number" placeholder="Page" [(ngModel)]="page">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <pdf-viewer [src]="pdfSrc" [page]="page" [original-size]="true" style="display: block;"></pdf-viewer>
+    </div>
+  </div>
+</div>
